@@ -19,5 +19,8 @@ RUN apt-get update && apt-get install -y \
 # lumen packages
 RUN docker-php-ext-install mcrypt mbstring tokenizer zip
 
+# Gulp + Bower
+RUN npm install -g gulp@3.9.0 bower@1.5.2
+
 # Cleanup
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
