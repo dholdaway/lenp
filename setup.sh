@@ -21,5 +21,3 @@ apt-key add nodesource.gpg.key
 
 echo 'deb https://deb.nodesource.com/node_0.12 jessie main' >> /etc/apt/sources.list
 echo 'deb-src https://deb.nodesource.com/node_0.12 jessie main' >> /etc/apt/sources.list
-
-rm -rf libssl0.9.8_0.9.8o-7_amd64.deb nginx_signing.key nodesource.gpg.key

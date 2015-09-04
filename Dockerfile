@@ -23,4 +23,4 @@ RUN docker-php-ext-install mcrypt mbstring tokenizer zip
 RUN npm install -g gulp@3.9.0 bower@1.5.2
 
 # Cleanup
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get clean && npm cache clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
